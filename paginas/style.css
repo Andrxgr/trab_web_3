@@ -1,0 +1,140 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: 0;
+    font-family:'Playfair Display', serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+nav{
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+    padding: 2rem;
+    display: flex;
+    backdrop-filter: blur(25px);
+    box-shadow: rgb(0, 0, 0, 0.1) 0px 2px px;
+
+
+}
+nav ul{ 
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7rem;
+    color: rgb(233, 230, 230);
+
+}
+ul li{
+
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    color: rgb(233, 230, 230);
+    
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(233, 230, 230);
+    
+
+}
+
+
+h1{
+    font-size: 60px;
+    color: white;
+}
+
+.efeito{
+    display: inline-block;
+    position: relative;
+}
+
+.efeito::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #f7f3f3;
+    transform-origin: bottom right ;
+    transition: transform 0.5s ease-out;
+}
+
+.efeito:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.div-text-and-img{
+    margin-top: 7%;
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 6%;
+    align-items: center;
+}
+.img-1{
+    width: 630px;
+    height:  430px;
+    border-radius: 10%;
+    transition-duration: 0.2s;
+    box-shadow: 1px 5px 5px rgba(22, 20, 24, 0.527);
+}
+.img-1:hover{
+    scale: 1.1;
+}
+
+.img-2{
+    width: 630px;
+    height:  530px;
+    border-radius: 10%;
+    transition-duration: 0.2s;
+    box-shadow: 1px 5px 5px rgba(22, 20, 24, 0.527);
+}
+.img-2:hover{
+    scale: 1.1;
+}
+
+.text-1{
+    font-size: 30px;
+    text-align: justify;
+    margin-right: 10% ;
+    justify-content: space-between;
+    
+}
+
+.div-text-2{
+    display: block;
+    
+}
+.text-2{
+    font-size: 30px;
+    text-align: justify;
+    margin-right: 10% ;
+}
+
+.title-formacao{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    
+}
